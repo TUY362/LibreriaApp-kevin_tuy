@@ -1,33 +1,43 @@
 package org.kt.model;
 
 /**
- * Representa la entidad Autor que interactúa con los libros.
- * 
- * @author Kevin Tuy - 2026320
- * @version 1.0.0
+ * Entidad Autor para la capa modelo de LibraryApp.
  */
 public class Autor {
     private int idAutor;
-    private String nombre;
-    private String nacionalidad;
+    private String nombres;
+    private String apellidos;
 
-    public Autor() {}
-
-    public Autor(int idAutor, String nombre, String nacionalidad) {
-        this.idAutor = idAutor;
-        this.nombre = nombre;
-        this.nacionalidad = nacionalidad;
+    public Autor() {
     }
 
-    public int getIdAutor() { return idAutor; }
-    public void setIdAutor(int idAutor) { this.idAutor = idAutor; }
+    public Autor(int idAutor, String nombres, String apellidos) {
+        this.idAutor = idAutor;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+    }
 
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
+    public int getIdAutor() {
+        return idAutor;
+    }
 
-    public String getNacionalidad() { return nacionalidad; }
-    public void setNacionalidad(String nacionalidad) { this.nacionalidad = nacionalidad; }
+    public void setIdAutor(int idAutor) {
+        this.idAutor = idAutor;
+    }
 
-    @Override
-    public String toString() { return this.nombre; }
+    public String getNombres() {
+        return nombres;
+    }
+
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
 }

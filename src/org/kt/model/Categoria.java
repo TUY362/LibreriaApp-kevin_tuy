@@ -1,28 +1,33 @@
 package org.kt.model;
 
 /**
- * Representa la categoría o género literario de los libros.
- * 
- * @author Kevin Tuy - 2026320
- * @version 1.0.0
+ * Entidad Categoria para la capa modelo de LibraryApp.
  */
 public class Categoria {
     private int idCategoria;
-    private String descripcion;
+    private String nombreCategoria;
 
-    public Categoria() {}
-
-    public Categoria(int idCategoria, String descripcion) {
-        this.idCategoria = idCategoria;
-        this.descripcion = descripcion;
+    public Categoria() {
     }
 
-    public int getIdCategoria() { return idCategoria; }
-    public void setIdCategoria(int idCategoria) { this.idCategoria = idCategoria; }
+    public Categoria(int idCategoria, String nombreCategoria) {
+        this.idCategoria = idCategoria;
+        this.nombreCategoria = nombreCategoria;
+    }
 
-    public String getDescripcion() { return descripcion; }
-    public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
+    public int getIdCategoria() {
+        return idCategoria;
+    }
 
-    @Override
-    public String toString() { return this.descripcion; }
+    public void setIdCategoria(int idCategoria) {
+        this.idCategoria = idCategoria;
+    }
+
+    public String getNombreCategoria() {
+        return nombreCategoria;
+    }
+
+    public void setNombreCategoria(String nombreCategoria) {
+        this.nombreCategoria = nombreCategoria;
+    }
 }
